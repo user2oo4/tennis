@@ -26,3 +26,33 @@ def load_wta_matches(year):
 # w_df,w_svpt,w_1stIn,w_1stWon,w_2ndWon,w_SvGms,w_bpSaved,w_bpFaced,l_ace,
 # l_df,l_svpt,l_1stIn,l_1stWon,l_2ndWon,l_SvGms,l_bpSaved,l_bpFaced,winner_rank,
 # winner_rank_points,loser_rank,loser_rank_points
+
+# Columns in raw player data
+# player_id,name_first,name_last,hand,dob,ioc,height,wikidata_id
+
+# Inferred data for players:
+# win_percentage on different surfaces
+
+# Clutch stats
+# break_point_conversion_rate on different surfaces
+# break_points_saved_rate on different surfaces
+
+# Basic stats
+# 1st_serve_percentage on different surfaces
+# 1st_serve_win_percentage on different surfaces
+# 2nd_serve_win_percentage on different surfaces
+# 1st_serve_return_win_percentage on different surfaces
+# 2nd_serve_return_win_percentage on different surfaces
+# overall_serve_win_percentage on different surfaces
+# overall_return_win_percentage on different surfaces
+
+# Form
+# decaying average of last 2 months performance on different surfaces
+# include opponent's rank and importance of tournament as weights as well
+
+# In order to calculate these stats, iterate and grab these
+# Total matches, wins, losses on different surfaces for each player
+# Total break points faced, break points saved, break points converted for each player on different surfaces
+# Total serving points (svpt) -> total serving points won, total first serves in, won, etc.
+# Same but for return points when doing opponent's stats
+
