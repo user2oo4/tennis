@@ -12,6 +12,7 @@
 - feel free to make a new more specific class based on player, or any new class (such as head2head)
 - however, the class directly inside src should be more generic, and more specific classes can be written within the model folder if needed
 
+```
 tennis/
 ├── src/
 │   ├── player.py
@@ -25,6 +26,7 @@ tennis/
 │   ├── raw/
 │   └── processed/
 └── ...
+```
 
 ## How to start
 1. venv and install libraries from requirements.txt
