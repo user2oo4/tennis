@@ -11,22 +11,22 @@ class Player:
         self.height = height
         self.wikidata_id = wikidata_id
         # Realized stats
-        self.last_updated = None # for decaying average stats
-        # All stats are based on surfaces and also decayed so no need for form stats
-        # Well form maybe just last 2 months regarless of surface as well
+        # This is just a placeholder for a generic class Player
+        # Detailed stats can be filled in later in more specific classes for each repo
+        # Comments are examples of what could be included, implementation will depend on the data available and the specific use case
         self.stats = {
-            "last_updated": {}, # for decaying average stats, this has to account for the surface as well, so maybe a dict of surface to last updated date
-            "ovr_form": 0.0, # decaying average of last 2 months performance on all surfaces
-            "win_percentage": {}, # on different surfaces decaying over the last 1 year (whole season)
-            "break_point_conversion_rate": {}, 
-            "break_points_saved_rate": {},
-            "1st_serve_percentage": {},
-            "1st_serve_win_percentage": {},
-            "2nd_serve_win_percentage": {},
-            "1st_serve_return_win_percentage": {},
-            "2nd_serve_return_win_percentage": {},
-            "overall_serve_win_percentage": {},
-            "overall_return_win_percentage": {},
+            # "last_updated": {}, # for decaying average stats, this has to account for the surface as well, so maybe a dict of surface to last updated date
+            # "ovr_form": 0.0, # decaying average of last 2 months performance on all surfaces
+            # "win_percentage": {}, # on different surfaces decaying over the last 1 year (whole season)
+            # "break_point_conversion_rate": {}, 
+            # "break_points_saved_rate": {},
+            # "1st_serve_percentage": {},
+            # "1st_serve_win_percentage": {},
+            # "2nd_serve_win_percentage": {},
+            # "1st_serve_return_win_percentage": {},
+            # "2nd_serve_return_win_percentage": {},
+            # "overall_serve_win_percentage": {},
+            # "overall_return_win_percentage": {},
         }
     
     def __repr__(self):
